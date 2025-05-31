@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Laporan Harian</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Laporan Harian</h1>
+
+  <h2>Aktivitas Kerja</h2>
+  <form id="formAktivitas">
+    <label for="namaKapal">Nama Kapal :</label><br />
+    <input type="text" id="namaKapal" required /><br />
+
+    <label for="jenisPekerjaan">Jenis Pekerjaan :</label><br />
+    <input type="text" id="jenisPekerjaan" required /><br />
+
+    <label for="titikKerja">Titik Kerja Tembusan Area :</label><br />
+    <input type="text" id="titikKerja" required /><br />
+
+    <label for="dariSubcon">Dari Subcon :</label><br />
+    <input type="text" id="dariSubcon" required /><br />
+
+    <label for="jumlahPekerja">Jumlah Pekerja dari Subcon :</label><br />
+<input type="text" id="jumlahPekerja" required /><br /><br />
+
+  </form>
+
+  <button id="btnSimpan">Simpan Laporan</button>
+
+  <h2>Daftar Laporan</h2>
+  <ul id="daftarLaporan"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
