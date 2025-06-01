@@ -1,0 +1,124 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 90%;
+  margin: 30px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1, h2 {
+  text-align: center;
+  color: #005f73;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #0a9396;
+}
+
+/* Input fields */
+input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #0a9396;
+  box-shadow: 0 0 8px rgba(10, 147, 150, 0.3);
+  outline: none;
+}
+
+/* Button */
+button {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  padding: 0.75rem 1.5rem;
+  background-color: #0a9396;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f73;
+  transform: scale(1.05);
+}
+
+/* List */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  background-color: white;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+.delete-btn {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background-color: #bb3e03;
+  border: none;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #7a2700;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  body {
+    max-width: 600px;
+  }
+
+  h1, h2 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1.1rem;
+  }
+
+  .delete-btn {
+    font-size: 1rem;
+  }
+}
